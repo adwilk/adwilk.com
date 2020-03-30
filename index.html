@@ -14,6 +14,10 @@
       .amex { height: 0.75rem; vertical-align: middle; }
       .github,.twitter { height: 1.5rem; vertical-align: bottom; }
       .underline { border-bottom: 1px solid currentColor; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #111; color: #FFF; }
+        .github { filter: invert(1); }
+      }
     </style>
   </head>
   <body>
