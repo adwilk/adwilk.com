@@ -15,44 +15,62 @@
       font-family: 'PT Mono', monospace;
       line-height: 1.5rem;
     }
+
     h1 {
       font-size: 1rem;
       font-weight: 100;
       margin-bottom: 2rem;
       text-transform: lowercase;
     }
+
     p {
       font-weight: 800;
     }
+
     a {
       text-decoration: none;
       color: currentColor;
     }
+
     .amex {
       height: 0.75rem;
       vertical-align: middle;
     }
+
     .github,
     .twitter {
       height: 1.5rem;
       vertical-align: bottom;
     }
+
     .underline {
       border-bottom: 1px solid currentColor;
     }
+
     @media (prefers-color-scheme: dark) {
       body {
         background: #111;
         color: #FFF;
       }
+
       .github {
         filter: invert(1);
       }
+    }
+    .chart {
+      margin-bottom: 3rem;
+      background: linear-gradient(transparent, #005aff);
+      width: 600px;
+      max-width: 100%;
+      height: 200px;
+      transform: scaleY(-1);
+      clip-path: polygon('%WITHINGS%');
     }
   </style>
 </head>
 
 <body>
+  <div class="chart" aria-hidden="true"></div>
   <h1><span class="typewriter">Adam Wilkinson</span><span class="cursor" aria-hidden="true">_</span></h1>
   <p>Father of two<span aria-hidden="true"> 👨‍👩‍👧‍👦</span>.</p>
   <p>Fullstack software engineer @ <a href="https://americanexpress.io"><img class="amex" src="amex.svg" alt="American Express" /></a>.</p>
